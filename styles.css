@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: white !important;
+}
+
+nav {
+    background-color: #1899D6;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    color: yellow !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+
+
+.hero {
+   /* Sizing */
+   width: 100vw;
+   height: 100vh;
+   
+   /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Text styles */
+   text-align: center;
+   color: white;
+   
+   /* Background styles */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./img/chicago.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+
+    color: whitesmoke;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 300px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.card {
+    max-width: 30rem !important;
+}
+
+.logo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.logo-row img {
+    width: 150px;
+    margin-bottom: 5vh;
+}
+
+.brands {
+    background-color: white !important;
+}
+
+.brands h2 {
+    margin-bottom: 3vh;
+}
+
+.work {
+    margin-top: 5vh;
+}
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+}
+
+.card-body {
+    background-color: #eff7fa;
+}
+
+img.card-img-top {
+    height: 250px !important;
+}
+
+#me {
+    width: 300px;
+    height: 400px;
+}
+
+#primaryCTA {
+    margin-top: 4vh;
+}
+
+.socials img {
+    width: 50px;
+}
+
+.card-button {
+    width: 85%;
+}
+
+#um {
+    margin-top: 17px !important;
+}
+
+#house {
+    margin-top: -15px !important;
+}
