@@ -15,31 +15,65 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+              <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#myWork">Work</a>
+                    <a class="nav-link active" aria-current="page" href="#myWork" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Work</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About Me</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="openModal('modal-1')">Contact</a>
                 </li>
-            </ul>
+             </ul>
             </div>
         </div>
     </nav>
     <section class="hero">
         <div class="hero-inner">
-            <h1 class="h1">Need a Chicago SEO Expert?</h1>
-            <h2 class="h2">My name is Dusty Lawless, no kidding. I'm a content and technical SEO pro based in Chicago.</h2>
-            <h5 class="h5">Oh, and I built this site, too.</h5>
-            <a href="#contact"><button class="button-19" role="button" id="primaryCTA">Get in Touch</button></a>
+            <h1 class="text-lg-md">Need a Chicago SEO Expert?</h1>
+            <p>My name is Dusty Lawless, no kidding. I'm a content and technical SEO pro based in Chicago.</p>
+            <p>Oh, and I built this site, too.</p>
+            <a href="#"><button class="cta button-19" role="button" id="primaryCTA" onclick="openModal('modal-1')">Get in Touch</button></a>
         </div>
     </section>
+    <div id="modal-1" class="jw-modal">
+      <div class="jw-modal-body">
+          <h1>Contact Dusty Lawless</h1>
+          <form target="_blank" action="https://formsubmit.co/djlaw90@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input name="fullName" type="fullName" class="form-control" id="fullName" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="service">What Service are You Looking For?</label>
+              <select name="service" class="form-control" id="serviceSelect" required>
+                <option selected="selected">Select a Service</option>
+                <option>Technical SEO</option>
+                <option>Content SEO</option>
+                <option>Content Writing</option>
+                <option>Copywriting</option>
+                <option>UX Writing/Content Design</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="anythingElse">Anything Else I Should Know?</label>
+              <textarea name="anythingElse" class="form-control" id="anythingElse" rows="3"></textarea>
+            </div>
+            <button type="submit" class="button-19" id="submit">Contact Me</button>
+          </form>
+          
+          <button type="button" class="btn-close" aria-label="Close" onclick="closeModal()"></button>
+      </div>
+  </div>
     <main>
         <div class="container-fluid">
-            <div class="brands d-sm-block d-md-block">
+            <section class="brands d-sm-block d-md-block">
                 <h2 class="h2 pt-4">Brands I've Worked With</h2>
                 <div class="container text-center">
                   <div class="logo-row row">
@@ -63,11 +97,11 @@
                     </div>
                   </div>
               </div>    
-            </div>
+            </section>
         </div>
             <div class="work container-fluid">
                 <h2 class="h2" id="myWork">My Work</h2>
-            <div class="row row-cols-1 row-cols-md-3 p-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 p-5">
                 <div class="col mb-4">
                   <div class="card h-100">
                     <img src="https://webobjects2.cdw.com/is/image/CDW/cat5-vs-cat6-ethernet-cables-thumbnail-540" class="card-img-top" alt="Cat5 vs Cat 6 article thumbnail">
@@ -76,7 +110,9 @@
                       <h5 class="card-title">Cat5 vs. Cat6 Ethernet Cables</h5>
                       <p class="card-text"><small class="text-muted">Published 10/12/2021</small></p>
                       <p class="card-text">Learn the differences between Cat5, Cat5e, Cat6 and Cat6a Ethernet cables and find the best type of Ethernet cable for your needs. I did the writing, research, SEO research and built the article.</p>
-                      <a href="https://www.cdw.com/content/cdw/en/articles/hardware/cat5-vs-cat6-ethernet-cables.html"><button class="button-19 card-button">Link to live article</button></a>
+                      <div class="button text-center">
+                        <a href="https://www.cdw.com/content/cdw/en/articles/hardware/cat5-vs-cat6-ethernet-cables.html"><button class="button-19 card-button">See live article</button></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -88,7 +124,7 @@
                       <h5 class="card-title">Laptop vs. Desktop: Pros and Cons</h5>
                       <p class="card-text"><small class="text-muted">Published 7/21/2023</small></p>
                       <p class="card-text">This article breaks down the pros and cons of laptops vs. desktops so you can make an informed decision on which is best for you. Used generative AI to outline. I wrote the content and did the SEO research.</p>
-                      <a href="https://www.cdw.com/content/cdw/en/articles/hardware/laptop-vs-desktop.html"><button class="button-19 card-button">Link to Live Article</button></a>
+                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/laptop-vs-desktop.html"><button class="button-19 card-button">See Live Article</button></a></div>
                     </div>
                   </div>
                 </div>
@@ -97,10 +133,10 @@
                       <img src="https://webobjects2.cdw.com/is/image/CDW/cpu-versus-ram-which-more-important-you-card-540" class="card-img-top" alt="CPU vs. RAM article thumbnail">
                       <div class="card-header"><b>CDW.com</b></div>
                       <div class="card-body">
-                        <h5 class="card-title">CPU vs. RAM: Which is More Important for You?</h5>
+                        <h5 class="card-title">CPU vs. RAM</h5>
                         <p class="card-text"><small class="text-muted">Published 1/06/2022</small></p>
                         <p class="card-text">Keep reading to learn more about how both components work and what their specifications can mean for overall performance. I wrote the content, did the SEO research, and built the article.</p>
-                        <a href="https://www.cdw.com/content/cdw/en/articles/hardware/cpu-versus-ram-which-more-important-you.html"><button class="button-19 card-button">Link to Live Article</button></a>
+                        <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/cpu-versus-ram-which-more-important-you.html"><button class="button-19 card-button">See Live Article</button></a></div>
                       </div>
                     </div>
                 </div>
@@ -112,7 +148,7 @@
                       <h5 class="card-title">M.2 vs NVMe vs. 2.5" vs. U.2 SSDs</h5>
                       <p class="card-text"><small class="text-muted">Published 7/21/2022</small></p>
                       <p class="card-text">This article breaks down the primary types of SSDs. I wrote the content, did the SEO research, and built the article.</p>
-                      <a href="https://www.cdw.com/content/cdw/en/articles/hardware/ssd-types-m2-sata-nvme-u2.html"><button class="button-19 card-button">Link to Live Article</button></a>
+                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/ssd-types-m2-sata-nvme-u2.html"><button class="button-19 card-button">See Live Article</button></a></div>
                     </div>
                  </div>
                </div>
@@ -124,7 +160,7 @@
                       <h5 class="card-title">Desktop PC vs. All-in-One Computers</h5>
                       <p class="card-text"><small class="text-muted">Published 10/17/2022</small></p>
                       <p class="card-text">Debating between buying an all-in-one vs. a desktop computer? Read this comprehensive guide. I wrote the content, did the SEO research, and built the article.</p>
-                      <a href="https://www.cdw.com/content/cdw/en/articles/hardware/desktop-vs-all-in-one.html"><button class="button-19 card-button">Link to Live Article</button></a>
+                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/desktop-vs-all-in-one.html"><button class="button-19 card-button">See Live Article</button></a></div>
                     </div>
                   </div>
                 </div>
@@ -135,8 +171,8 @@
                     <div class="card-body">
                       <h5 class="card-title">Top 10 Pros and Cons of Chromebooks</h5>
                       <p class="card-text"><small class="text-muted">Published 8/04/2022</small></p>
-                      <p class="card-text">This is a short card.</p>
-                      <a href="https://www.cdw.com/content/cdw/en/articles/hardware/chromebook-pros-and-cons.html"><button class="button-19 card-button">Link to Live Article</button></a>
+                      <p class="card-text">Be aware of the pros and cons of Chromebooks before you make your purchase. I wrote the content, did the SEO research, and built the article.</p>
+                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/chromebook-pros-and-cons.html"><button class="button-19 card-button">See Live Article</button></a></div>
                     </div>
                   </div>
                 </div>
@@ -147,8 +183,8 @@
                       <div class="card-body">
                         <h5 class="card-title">5 Questions to Ask When Buying Uninterruptible Power Supplies</h5>
                         <p class="card-text"><small class="text-muted">Published 8/30/2022</small></p>
-                        <p class="card-text">This is a short card.</p>
-                        <a href="https://fedtechmagazine.com/article/2022/08/5-questions-ask-when-buying-uninterruptible-power-supplies"><button class="button-19 card-button">Link to Live Article</button></a>
+                        <p class="card-text">The right UPS can keep the work going and prevent data loss during outages. Here's what you should know before buying a UPS. I wrote this article and provided microcopy for the related infographic.</p>
+                        <div class="button text-center"><a href="https://fedtechmagazine.com/article/2022/08/5-questions-ask-when-buying-uninterruptible-power-supplies"><button class="button-19 card-button">See Live Article</button></a></div>
                       </div>
                     </div>
                   </div>
@@ -159,8 +195,11 @@
                         <div class="card-body">
                           <h5 class="card-title">5 Answers to Common Questions About the Chip Supply Shortage</h5>
                           <p class="card-text"><small class="text-muted">Published 7/27/2022</small></p>
-                          <p class="card-text">This is a short card.</p>
-                          <a href="https://fedtechmagazine.com/article/2022/07/5-answers-common-questions-about-chip-supply-shortage"><button class="button-19 card-button">Link to Live Article</button></a>
+                          <p class="card-text">
+                            As agencies went remote in 2020, the demand for laptops and other consumer electronics skyrocketed. Here's why.
+                            I wrote and researched this article.
+                          </p>
+                          <div class="button text-center"><a href="https://fedtechmagazine.com/article/2022/07/5-answers-common-questions-about-chip-supply-shortage"><button class="button-19 card-button">See Live Article</button></a></div>
                         </div>
                       </div>
                     </div>
@@ -171,8 +210,8 @@
                           <div class="card-body">
                             <h5 class="card-title">Three Ways to Traverse the ACT with Test Prep</h5>
                             <p class="card-text"><small class="text-muted">Published 12/26/2013</small></p>
-                            <p class="card-text">This is a short card.</p>
-                            <a href="https://www.chicagoacademic.com/bid/318412/Three-Ways-to-Traverse-the-ACT-with-Test-Prep"><button class="button-19 card-button">Link to Live Article</button></a>
+                            <p class="card-text">I wrote this advice article. This was my first internship out of college.</p>
+                            <div class="button text-center"><a href="https://www.chicagoacademic.com/bid/318412/Three-Ways-to-Traverse-the-ACT-with-Test-Prep"><button class="button-19 card-button">See Live Article</button></a></div>
                           </div>
                         </div>
                       </div>
@@ -183,8 +222,8 @@
                             <div class="card-body">
                               <h5 class="card-title">Getting rowdy with Dropkick Murphys</h5>
                               <p class="card-text"><small class="text-muted">Published 11/15/2012</small></p>
-                              <p class="card-text">This is a short card.</p>
-                              <a href="https://www.smilepolitely.com/music/dropkick_murphys/"><button class="button-19 card-button">Link to Live Article</button></a>
+                              <p class="card-text">I wrote this performance preview article during college. Written in a casual voice.</p>
+                              <div class="button text-center"><a href="https://www.smilepolitely.com/music/dropkick_murphys/"><button class="button-19 card-button">See Live Article</button></a></div>
                             </div>
                           </div>
                         </div>
@@ -195,8 +234,8 @@
                               <div class="card-body">
                                 <h5 class="card-title">A pioneer of the bass guitar</h5>
                                 <p class="card-text"><small class="text-muted">Published 10/12/2012</small></p>
-                                <p class="card-text">This is a short card.</p>
-                                <a href="https://www.smilepolitely.com/music/a_pinoeer_of_the_bass_guitar/"><button class="button-19 card-button">Link to Live Article</button></a>
+                                <p class="card-text">I wrote this performance preview article during college. It's about one of my bass heroes, written in a casual voice.</p>
+                                <div class="button text-center"><a href="https://www.smilepolitely.com/music/a_pinoeer_of_the_bass_guitar/"><button class="button-19 card-button">See Live Article</button></a></div>
                               </div>
                             </div>
                           </div>
@@ -207,8 +246,8 @@
                                 <div class="card-body">
                                   <h5 class="card-title">You can count on Electric Six</h5>
                                   <p class="card-text"><small class="text-muted">Published 11/07/2012</small></p>
-                                  <p class="card-text">This is a short card.</p>
-                                  <a href="https://www.smilepolitely.com/music/you_can_count_on_electric_six/"><button class="button-19 card-button">Link to Live Article</button></a>
+                                  <p class="card-text">Goofy article on a goofy band I wrote in my college days.</p>
+                                  <div class="button text-center"><a href="https://www.smilepolitely.com/music/you_can_count_on_electric_six/"><button class="button-19 card-button">See Live Article</button></a></div>
                                 </div>
                               </div>
                             </div>        
@@ -231,8 +270,8 @@
                       <div class="col-md-8">
                         <p class="my-2">
                           Hello! I'm a subject matter expert and educator in search engine optimization for a Fortune 200 company and tutor community college students on the side.
-                          I am an expert in both content and technical SEO for e-commerce websites and a student of web development. I'm open to freelance and part-time work in writing or SEO.
-                          I particularly enjoy writing about technology, education, and music.
+                          I am an expert in both content and technical SEO for e-commerce websites and a student of web development (I built this site as an exercise in Bootstrap and Flexbox). 
+                          I'm open to freelance and part-time work in writing or SEO. I particularly enjoy writing about technology, education, and music.
                         </p>
                         <p class="my-2">
                           My skill set includes keyword research, link building, site architecture, content writing, content strategy, canonicalization best practices, 
@@ -241,11 +280,12 @@
                         </p>
                         <p class="my-2">
                           I am competent in Adobe Analytics, Google Analytics, seoClarity, Moz, Google Search Console, Screaming Frog, and Google Ads. I have experience using several content management systems including Adobe Experience Manager (AEM), Wordpress, Magento, Weebly and Squarespace.
-                          I take a product owner mentality to search engine optimization, creating product roadmaps, writing SEO business cases, and using data-driven insights to help product owners prioritize SEO initiatives amongst their other initiatives.
+                          I take a product owner mentality to search engine optimization, creating product roadmaps, presenting SEO business cases, and using data-driven insights to help product owners and SEO teams alike prioritize their initiatives.
                         </p>
                         <p class="my-2">
                           My personal hobbies include playing bass guitar, creative writing, web development, gardening, boxing, yoga, reading (a lot of Stephen King!), and biking.
                         </p>
+                        <button class="button-19 cta mt-3 mb-5" onclick="openModal('modal-1')">Drop Me a Line</button>
                       </div>
                     </div>
                   </div>
@@ -254,19 +294,17 @@
             </div>
           </div>
                 
-                <div class="container-fluid">
-                    <h2 class="h2" id="contact">Contact</h2>
-                    <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
-                        <input type="text" name="name" required>
-                        <input type="email" name="email" required>
-                        <button type="submit">Send</button>
-                  </form> -->
+   
                 </div>
-    </main>
-    <footer class="footer mt-auto py-3 bg-light">
+              </main>
+    <footer class="footer mt-auto py-3">
 			<div class="container text-center"> <span class="text-muted">Copyright © 2024 Dustin Lawless</span></div>
 		</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="app.js"></script>
+    
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
