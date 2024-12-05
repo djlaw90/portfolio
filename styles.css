@@ -48,7 +48,8 @@ nav {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3em !important;
+    margin-bottom: 1rem !important;
 }
 
 .hero h1 {
