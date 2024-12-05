@@ -100,7 +100,7 @@ h2 {
 }
 
 .brands h2 {
-    margin-left: 50px;
+    text-align: center !important;
     margin-bottom: 3vh;
 }
 
