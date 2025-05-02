@@ -38,6 +38,8 @@ window.addEventListener('load', function() {
             closeModal();
         }
     });
+
+
 });
 
 

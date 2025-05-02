@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
+    position: relative;
 }
 
 main {
@@ -196,10 +201,6 @@ img.card-img-top {
 
 #primaryCTA {
     margin-top: 4vh;
-}
-
-.socials {
-
 }
 
 .socials img {
