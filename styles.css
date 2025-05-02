@@ -47,6 +47,11 @@ nav {
    background-attachment: fixed;
 }
 
+h2 {
+    font-size: 3em !important;
+    margin-bottom: 1rem !important;
+}
+
 .hero h1 {
     /* Text styles */
     font-size: 5em;
@@ -96,10 +101,12 @@ nav {
 }
 
 .brands h2 {
+    text-align: center !important;
     margin-bottom: 3vh;
 }
 
 .work {
+    width: 85% !important;
     margin-top: 5vh;
 }
 
