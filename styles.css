@@ -48,8 +48,8 @@ nav {
 }
 
 h2 {
-    font-size: 3em !important;
     margin-bottom: 1rem !important;
+    font-size: clamp(1rem, 4vw, 2rem) !important;
 }
 
 .hero h1 {
@@ -196,6 +196,10 @@ img.card-img-top {
 
 #primaryCTA {
     margin-top: 4vh;
+}
+
+.socials {
+
 }
 
 .socials img {
