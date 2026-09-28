@@ -1,450 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="rhXXKWbwcQvjmuBP17rvG4DrKVOnXQQ3ZU-_cbvyx_0" />
-    <title>Dusty Lawless | Technical & Content SEO Expert Chicago</title>
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- Favicon End -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="rhXXKWbwcQvjmuBP17rvG4DrKVOnXQQ3ZU-_cbvyx_0" />
+  <title>Dusty Lawless | Technical & Content SEO Expert Chicago</title>
+  <meta name="description" content="Dusty Lawless is a Chicago-based technical and content SEO expert, writer, and front-end developer. See published writing, dev projects, and get in touch.">
+  <link rel="canonical" href="https://dustylawless.com/">
+  <meta name="theme-color" content="#0f1b24">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dustylawless.com/">
+  <meta property="og:title" content="Dusty Lawless | Technical & Content SEO Expert Chicago">
+  <meta property="og:description" content="Content and technical SEO pro based in Chicago. Writing, SEO strategy, and front-end development.">
+  <meta property="og:image" content="https://dustylawless.com/img/chicago.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/chicago.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dusty Lawless",
+    "alternateName": "Dustin Lawless",
+    "url": "https://dustylawless.com/",
+    "image": "https://dustylawless.com/img/dusty-lawless.jpg",
+    "jobTitle": "SEO Specialist",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL" },
+    "knowsAbout": ["Technical SEO", "Content SEO", "Content Writing", "Web Development"],
+    "sameAs": [
+      "https://www.linkedin.com/in/dusty-lawless-3126a71b8/",
+      "https://github.com/djlaw90",
+      "https://www.frontendmentor.io/profile/djlaw90"
+    ]
+  }
+  </script>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" class="scrollspy-example">
-    <nav class="navbar fixed-top navbar-expand-lg" id="navbar-example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dusty Lawless</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#myWritingWork" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Writing Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#myDevWork" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Dev Work</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="openModal('modal-1')">Contact</a>
-                </li>
-             </ul>
-            </div>
-        </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">Dusty Lawless</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-links" data-nav-links>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#dev">Dev Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><button class="btn btn-small" type="button" data-open-contact>Contact</button></li>
+      </ul>
     </nav>
-    <section class="hero">
-        <div class="hero-inner">
-            <h1 class="text-lg-md">Need a Chicago SEO Expert?</h1>
-            <p>My name is Dusty Lawless, no kidding. I'm a content and technical SEO pro based in Chicago.</p>
-            <p>Oh, and I built this site, too. Thanks Bootstrap!</p>
-            <a href="#"><button class="cta button-19" role="button" id="primaryCTA" onclick="openModal('modal-1')">Get in Touch</button></a>
-        </div>
-    </section>
-    <div id="modal-1" class="jw-modal">
-      <div class="jw-modal-body">
-          <h1>Contact Dusty Lawless</h1>
-          <form target="_blank" action="https://formsubmit.co/252c47b8ec3b9c770eeeec1eb67ee02f" method="POST">
-            <div class="form-group">
-              <label for="fullName">Full Name</label>
-              <input name="fullName" type="fullName" class="form-control" id="fullName" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
-            </div>
-            <div class="form-group">
-              <label for="service">What Service are You Looking For?</label>
-              <select name="service" class="form-control" id="serviceSelect" required>
-                <option selected="selected">Select a Service</option>
-                <option>Technical SEO</option>
-                <option>Content SEO</option>
-                <option>Content Writing</option>
-                <option>Copywriting</option>
-                <option>UX Writing/Content Design</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="anythingElse">Anything Else I Should Know?</label>
-              <textarea name="anythingElse" class="form-control" id="anythingElse" rows="3"></textarea>
-            </div>
-            <button type="submit" class="button-19" id="submit">Contact Me</button>
-          </form>
-          
-          <button type="button" class="btn-close" aria-label="Close" onclick="closeModal()"></button>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-inner container">
+      <p class="eyebrow">Content &amp; technical SEO · Chicago</p>
+      <h1>Need a Chicago SEO&nbsp;expert?</h1>
+      <p class="hero-lede">My name is Dusty Lawless, no kidding. I'm a content and technical SEO pro based in Chicago.</p>
+      <p class="hero-aside">Oh, and I built this site, too.</p>
+      <div class="hero-actions">
+        <button class="btn" type="button" data-open-contact>Get in touch</button>
+        <a class="btn btn-ghost" href="#writing">See my work</a>
       </div>
-  </div>
-    <main>
-        <div class="container">
-            <section class="brands d-sm-block d-md-block">
-                <h2 class="h2 pt-4">Brands I've Worked With</h2>
-                <div class="container text-center">
-                  <div class="logo-row row">
-                    <div class="col">
-                      <img src="./img/cdw-2023-red.jpg" alt="CDW logo">
-                    </div>
-                    <div class="col">
-                      <img src="./img/The House Tutoring Lounge logo.png" alt="The House logo" id="house">
-                    </div>
-                    <div class="col">
-                      <img src="./img/logo-cdw_edtech_k12.png" alt="Edtech logo">
-                    </div>
-                    <div class="col">
-                      <img src="./img/logo-cdw_fedtech.png" alt="Fedtech logo">
-                    </div>
-                    <div class="col">
-                      <img src="./img/smile-politely-logo.svg" alt="smilepolitely logo">
-                    </div>
-                    <div class="col">
-                      <img src="./img/UM_Logo-1.png" alt="Urbanmatter logo" id="um">
-                    </div>
-                  </div>
-              </div>    
-            </section>
+      <ul class="hero-stats">
+        <li><strong>Fortune 200</strong><span>SEO subject matter expert</span></li>
+        <li><strong>12</strong><span>published articles</span></li>
+        <li><strong>9</strong><span>dev projects shipped</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="brands" aria-labelledby="brands-heading">
+      <div class="container">
+        <h2 id="brands-heading" class="brands-heading">Brands I've worked with</h2>
+        <div class="marquee">
+          <ul class="logo-row">
+          <li><img src="img/cdw-2023-red.jpg" alt="CDW" width="270" height="145" loading="lazy"></li>
+          <li><img src="img/house-tutoring-logo.png" alt="The House Tutoring Lounge" width="480" height="295" loading="lazy"></li>
+          <li><img src="img/logo-cdw_edtech_k12.png" alt="EdTech Magazine" width="182" height="90" loading="lazy"></li>
+          <li><img src="img/logo-cdw_fedtech.png" alt="FedTech Magazine" width="182" height="90" loading="lazy"></li>
+          <li><img src="img/ebay-logo.svg" alt="eBay" width="1000" height="401" loading="lazy"></li>
+          <li><img src="img/smile-politely-logo.svg" alt="Smile Politely" width="160" height="80" loading="lazy"></li>
+          <li><img src="img/UM_Logo-1.png" alt="UrbanMatter" width="371" height="99" loading="lazy"></li>
+          </ul>
+          <ul class="logo-row" aria-hidden="true">
+          <li><img alt="" src="img/cdw-2023-red.jpg" data-alt="CDW" width="270" height="145" loading="lazy"></li>
+          <li><img alt="" src="img/house-tutoring-logo.png" data-alt="The House Tutoring Lounge" width="480" height="295" loading="lazy"></li>
+          <li><img alt="" src="img/logo-cdw_edtech_k12.png" data-alt="EdTech Magazine" width="182" height="90" loading="lazy"></li>
+          <li><img alt="" src="img/logo-cdw_fedtech.png" data-alt="FedTech Magazine" width="182" height="90" loading="lazy"></li>
+          <li><img alt="" src="img/ebay-logo.svg" data-alt="eBay" width="1000" height="401" loading="lazy"></li>
+          <li><img alt="" src="img/smile-politely-logo.svg" data-alt="Smile Politely" width="160" height="80" loading="lazy"></li>
+          <li><img alt="" src="img/UM_Logo-1.png" data-alt="UrbanMatter" width="371" height="99" loading="lazy"></li>
+          </ul>
         </div>
-            <section id="myWritingWork" class="work container">
-            <h2 class="h2">My Writing Work</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="https://webobjects2.cdw.com/is/image/CDW/cat5-vs-cat6-ethernet-cables-thumbnail-540" class="card-img-top" alt="Cat5 vs Cat 6 article thumbnail">
-                    <div class="card-header"><b>CDW.com</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Cat5 vs. Cat6 Ethernet Cables</h5>
-                      <p class="card-text"><small class="text-muted">Published 10/12/2021</small></p>
-                      <p class="card-text">Learn the differences between Cat5, Cat5e, Cat6 and Cat6a Ethernet cables and find the best type of Ethernet cable for your needs. I did the writing, research, SEO research and built the article.</p>
-                      <div class="button text-center">
-                        <a href="https://www.cdw.com/content/cdw/en/articles/hardware/cat5-vs-cat6-ethernet-cables.html"><button class="button-19 card-button">See live article</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="https://webobjects2.cdw.com/is/image/CDW/hardware-laptop-vs-desktop-og-thumbnail-540" class="btn card-img-top" alt="Laptop vs desktop article thumbnail">
-                    <div class="card-header"><b>CDW.com</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Laptop vs. Desktop: Pros and Cons</h5>
-                      <p class="card-text"><small class="text-muted">Published 7/21/2023</small></p>
-                      <p class="card-text">This article breaks down the pros and cons of laptops vs. desktops so you can make an informed decision on which is best for you. Used generative AI to outline. I wrote the content and did the SEO research.</p>
-                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/laptop-vs-desktop.html"><button class="button-19 card-button">See Live Article</button></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card h-100">
-                      <img src="https://webobjects2.cdw.com/is/image/CDW/cpu-versus-ram-which-more-important-you-card-540" class="card-img-top" alt="CPU vs. RAM article thumbnail">
-                      <div class="card-header"><b>CDW.com</b></div>
-                      <div class="card-body">
-                        <h5 class="card-title">CPU vs. RAM</h5>
-                        <p class="card-text"><small class="text-muted">Published 1/06/2022</small></p>
-                        <p class="card-text">Keep reading to learn more about how both components work and what their specifications can mean for overall performance. I wrote the content, did the SEO research, and built the article.</p>
-                        <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/cpu-versus-ram-which-more-important-you.html"><button class="button-19 card-button">See Live Article</button></a></div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="https://webobjects2.cdw.com/is/image/CDW/types-of-ssds-thumbnail-540" class="card-img-top" alt="Types of SSDs article thumbnail">
-                    <div class="card-header"><b>CDW.com</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">M.2 vs NVMe vs. 2.5" vs. U.2 SSDs</h5>
-                      <p class="card-text"><small class="text-muted">Published 7/21/2022</small></p>
-                      <p class="card-text">This article breaks down the primary types of SSDs. I wrote the content, did the SEO research, and built the article.</p>
-                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/ssd-types-m2-sata-nvme-u2.html"><button class="button-19 card-button">See Live Article</button></a></div>
-                    </div>
-                 </div>
-               </div>
-               <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="https://webobjects2.cdw.com/is/image/CDW/desktop-vs-all-in-one-og-thumbnail-540" class="card-img-top" alt="Desktop vs All-in-One article thumbnail">
-                  <div class="card-header"><b>CDW.com</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Desktop PC vs. All-in-One Computers</h5>
-                      <p class="card-text"><small class="text-muted">Published 10/17/2022</small></p>
-                      <p class="card-text">Debating between buying an all-in-one vs. a desktop computer? Read this comprehensive guide. I wrote the content, did the SEO research, and built the article.</p>
-                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/desktop-vs-all-in-one.html"><button class="button-19 card-button">See Live Article</button></a></div>
-                    </div>
-                  </div>
-                </div>
-               <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="https://webobjects2.cdw.com/is/image/CDW/hardware-chromebook-pros-cons-og-540" class="card-img-top" alt="Chromebooks pros and cons article thumbnail">
-                  <div class="card-header"><b>CDW.com</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Top 10 Pros and Cons of Chromebooks</h5>
-                      <p class="card-text"><small class="text-muted">Published 8/04/2022</small></p>
-                      <p class="card-text">Be aware of the pros and cons of Chromebooks before you make your purchase. I wrote the content, did the SEO research, and built the article.</p>
-                      <div class="button text-center"><a href="https://www.cdw.com/content/cdw/en/articles/hardware/chromebook-pros-and-cons.html"><button class="button-19 card-button">See Live Article</button></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="https://fedtechmagazine.com/sites/fedtechmagazine.com/files/styles/photo_sectionlnd_top/public/articles/%5Bcdw_tech_site%3Afield_site_shortname%5D/202208/GettyImages-527692052.jpg?itok=XyzmBELM" class="card-img-top" alt="UPSarticle thumbnail">
-                    <div class="card-header"><b>fedtechmagazine.com</b></div>
-                      <div class="card-body">
-                        <h5 class="card-title">5 Questions to Ask When Buying Uninterruptible Power Supplies</h5>
-                        <p class="card-text"><small class="text-muted">Published 8/30/2022</small></p>
-                        <p class="card-text">The right UPS can keep the work going and prevent data loss during outages. Here's what you should know before buying a UPS. I wrote this article and provided microcopy for the related infographic.</p>
-                        <div class="button text-center"><a href="https://fedtechmagazine.com/article/2022/08/5-questions-ask-when-buying-uninterruptible-power-supplies"><button class="button-19 card-button">See Live Article</button></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-4">
-                    <div class="card h-100">
-                      <img src="https://fedtechmagazine.com/sites/fedtechmagazine.com/files/styles/cdw_article_hero/public/articles/%5Bcdw_tech_site%3Afield_site_shortname%5D/202208/FT_Q322_FAQFive_Lawless_hero.jpg.webp?itok=XvP0eFkv" class="card-img-top" alt="Chip shortage article thumbnail">
-                      <div class="card-header"><b>fedtechmagazine.com</b></div>
-                        <div class="card-body">
-                          <h5 class="card-title">5 Answers to Common Questions About the Chip Supply Shortage</h5>
-                          <p class="card-text"><small class="text-muted">Published 7/27/2022</small></p>
-                          <p class="card-text">
-                            As agencies went remote in 2020, the demand for laptops and other consumer electronics skyrocketed. Here's why.
-                            I wrote and researched this article.
-                          </p>
-                          <div class="button text-center"><a href="https://fedtechmagazine.com/article/2022/07/5-answers-common-questions-about-chip-supply-shortage"><button class="button-19 card-button">See Live Article</button></a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col mb-4">
-                      <div class="card h-100">
-                        <img src="https://urbanmatter.com/chicago/wp-content/uploads/2017/09/14484729_413948662062487_4221579694872953731_n.jpg" class="card-img-top" alt="ACT test prep thumbnail">
-                        <div class="card-header"><b>Urbanmatter.com</b></div>
-                          <div class="card-body">
-                            <h5 class="card-title">5 Best Bottomless Boozy Brunch Spots in NYC</h5>
-                            <p class="card-text"><small class="text-muted">Published 09/28/2017</small></p>
-                            <p class="card-text">Listicle-style content with a funny flair.</p>
-                            <div class="button text-center"><a href="https://urbanmatter.com/chicago/bottomless-boozy-brunch-nyc/"><button class="button-19 card-button">See Live Article</button></a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col mb-4">
-                        <div class="card h-100">
-                          <img src="./img/Dropkick-Murphys-live-congress-theater.jpg" class="card-img-top" alt="Dropkick Murphys thumbnail">
-                          <div class="card-header"><b>smilepolitely.com</b></div>
-                            <div class="card-body">
-                              <h5 class="card-title">Getting rowdy with Dropkick Murphys</h5>
-                              <p class="card-text"><small class="text-muted">Published 11/15/2012</small></p>
-                              <p class="card-text">I wrote this performance preview article during college. Written in a casual voice.</p>
-                              <div class="button text-center"><a href="https://www.smilepolitely.com/music/dropkick_murphys/"><button class="button-19 card-button">See Live Article</button></a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-4">
-                          <div class="card h-100">
-                            <img src="./img/2victorwooten_500.jpg" class="card-img-top" alt="Victor Wooten thumbnail">
-                            <div class="card-header"><b>smilepolitely.com</b></div>
-                              <div class="card-body">
-                                <h5 class="card-title">A pioneer of the bass guitar</h5>
-                                <p class="card-text"><small class="text-muted">Published 10/12/2012</small></p>
-                                <p class="card-text">I wrote this performance preview article during college. It's about one of my bass heroes, written in a casual voice.</p>
-                                <div class="button text-center"><a href="https://www.smilepolitely.com/music/a_pinoeer_of_the_bass_guitar/"><button class="button-19 card-button">See Live Article</button></a></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col mb-4">
-                            <div class="card h-100">
-                              <img src="./img/electric20six.jpg" class="card-img-top" alt="Electric Six thumbnail">
-                              <div class="card-header"><b>smilepolitely.com</b></div>
-                                <div class="card-body">
-                                  <h5 class="card-title">You can count on Electric Six</h5>
-                                  <p class="card-text"><small class="text-muted">Published 11/07/2012</small></p>
-                                  <p class="card-text">Goofy article on a goofy band I wrote in my college days.</p>
-                                  <div class="button text-center"><a href="https://www.smilepolitely.com/music/you_can_count_on_electric_six/"><button class="button-19 card-button">See Live Article</button></a></div>
-                                </div>
-                              </div>
-                            </div>        
-                    </div>
-                    
-                  </section>
-          <section id="myDevWork" class="work container">
-            <h2 class="h2">My Dev Work</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="./img/etch-a-sketch.PNG" class="card-img-top" alt="Etch-A-Sketch thumbnail">
-                    <div class="card-header"><b>The Odin Project</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Etch-a-Sketch</h5>
-                      <p class="card-text"><small class="text-muted">Created October 2023</small></p>
-                      <p class="card-text">Etch-A-Sketch Project from The Odin Project Curriculum. Learned about CSS Grid.</p>
-                      <div class="button text-center">
-                        <a href="https://djlaw90.github.io/etch-a-sketch/"><button class="button-19 card-button">See Page</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="./img/roman-numeral.PNG" class="btn card-img-top" alt="Roman numeral thumbnail">
-                    <div class="card-header"><b>Free Code Camp</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Roman Numeral Converter</h5>
-                      <p class="card-text"><small class="text-muted">Created April 2024</small></p>
-                      <p class="card-text">Converts Roman numerals to Arabic numerals.</p>
-                      <div class="button text-center"><a href="https://djlaw90.github.io/romanNumberConverter/"><button class="button-19 card-button">See Page</button></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="./img/library.PNG" class="card-img-top" alt="Library thumbnail">
-                    <div class="card-header"><b>The Odin Project</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Library Project</h5>
-                      <p class="card-text"><small class="text-muted">Created Jan 2024</small></p>
-                      <p class="card-text">A little app for tracking the books you've read.</p>
-                      <div class="button text-center"><a href="https://djlaw90.github.io/odin-library/"><button class="button-19 card-button">See Page</button></a></div>
-                    </div>
-                 </div>
-               </div>
-               <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="./img/pokemon.PNG" class="card-img-top" alt="Pokemon thumbnail">
-                  <div class="card-header"><b>The Odin Project</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Pokemon Landing Page</h5>
-                      <p class="card-text"><small class="text-muted">Created Sept 2023</small></p>
-                      <p class="card-text">A landing page I made dedicated to Pokemon Blue.</p>
-                      <div class="button text-center"><a href="https://djlaw90.github.io/landing-page-odin/"><button class="button-19 card-button">See Page</button></a></div>
-                    </div>
-                  </div>
-                </div>
-               <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="./img/rps.PNG" class="card-img-top" alt="Rock paper scissors thumbnail">
-                  <div class="card-header"><b>The Odin Project</b></div>
-                    <div class="card-body">
-                      <h5 class="card-title">Rock, Paper, Scissors Game</h5>
-                      <p class="card-text"><small class="text-muted">Created Sept 2023</small></p>
-                      <p class="card-text">A little rock, paper, scissors game I made with Bootstrap and vanilla JS.</p>
-                      <div class="button text-center"><a href="https://djlaw90.github.io/rps/"><button class="button-19 card-button">See Page</button></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img src="./img/calculator.PNG" class="card-img-top" alt="Calculator thumbnail">
-                    <div class="card-header"><b>The Odin Project</b></div>
-                      <div class="card-body">
-                        <h5 class="card-title">Calculator</h5>
-                        <p class="card-text"><small class="text-muted">Created Oct 2023</small></p>
-                        <p class="card-text">Created a basic calculator.</p>
-                        <div class="button text-center"><a href="https://djlaw90.github.io/calculator/"><button class="button-19 card-button">See Page</button></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-4">
-                    <div class="card h-100">
-                      <img src="./img/dashboard.PNG" class="card-img-top" alt="dashboard thumbnail">
-                      <div class="card-header"><b>The Odin Project</b></div>
-                        <div class="card-body">
-                          <h5 class="card-title">Software dashboard</h5>
-                          <p class="card-text"><small class="text-muted">Created October 2023</small></p>
-                          <p class="card-text">
-                            Created the UI for a dashboard with a combo of CSS Grid and Flexbox.
-                          </p>
-                          <div class="button text-center"><a href="https://djlaw90.github.io/admin-dashboard/"><button class="button-19 card-button">See Page</button></a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col mb-4">
-                      <div class="card h-100">
-                        <img src="./img/tictactoe.PNG" class="card-img-top" alt="Tic tac toe thumbnail">
-                        <div class="card-header"><b>The Odin Project</b></div>
-                          <div class="card-body">
-                            <h5 class="card-title">Tic Tac Toe</h5>
-                            <p class="card-text"><small class="text-muted">Created Dec 2023</small></p>
-                            <p class="card-text">The timeless classic. Play vs. another player or the computer.</p>
-                            <div class="button text-center"><a href="https://djlaw90.github.io/tic-tac-toe/"><button class="button-19 card-button">See Page</button></a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col mb-4">
-                        <div class="card h-100">
-                          <img src="./img/frontend-mentor-article-component.PNG" class="card-img-top" alt="Tic tac toe thumbnail">
-                          <div class="card-header"><b>Frontend Mentor</b></div>
-                            <div class="card-body">
-                              <h5 class="card-title">Article Component</h5>
-                              <p class="card-text"><small class="text-muted">Created May 2025</small></p>
-                              <p class="card-text">A little article component, made with a spash of ES6 vanilla JavaScript.</p>
-                              <div class="button text-center"><a href="https://github.com/djlaw90/article-preview-component"><button class="button-19 card-button">See Page</button></a></div>
-                            </div>
-                          </div>
-                        </div>       
-                    </div>
-                    
-                </div>
-                <section id="about" class="container about">
-                  <div class="jumbotron">
-                    <h2 class="h2 mb-3">About Me</h2>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="./img/dusty lawless.jpg" alt="Dusty Lawless" id="me" class="img-fluid mb-2">
-                          <div class="row socials">
-                            <div class="col">
-                              <a href="https://www.linkedin.com/in/dusty-lawless-3126a71b8/"><img src="./img/LI-In-Bug.png" alt="Linkedin logo"></a>
-                              <a href="https://github.com/djlaw90"><img src="./img/github-mark.png" class="ms-1" alt="Github logo"></a>
-                              <a href="https://www.frontendmentor.io/profile/djlaw90"><img src="./img/frontendmentor-logo.svg" class="ms-1" alt="Frontend Mentor logo"></a>
-                            </div>
-                          </div>   
-                      </div>
-                      <div class="col-md-8">
-                        <p class="my-2">
-                          Hello! I'm a subject matter expert and educator in search engine optimization for a Fortune 200 company and tutor community college students on the side.
-                          I am an expert in both content and technical SEO for e-commerce websites and a student of web development (I built this site as an exercise in Bootstrap and Flexbox). 
-                          I'm open to freelance and part-time work in writing or SEO. I particularly enjoy writing about technology, education, and music.
-                        </p>
-                        <p class="my-2">
-                          My skill set includes keyword research, link building, site architecture, content writing, content strategy, canonicalization best practices, 
-                          crawling/indexation/ranking issues, semantic HTML, web accessibility best practices, XML sitemaps, robots.txt, and diagnosing issues related to 
-                          Core Web Vitals with Google Lighthouse, Google DevTools, PageSpeed Insights, and webpagetest.org. 
-                        </p>
-                        <p class="my-2">
-                          I am competent in Adobe Analytics, Google Analytics, seoClarity, Moz, Google Search Console, Screaming Frog, and Google Ads. I have experience using several content management systems including Adobe Experience Manager (AEM), Wordpress, Magento, Weebly and Squarespace.
-                          I take a product owner mentality to search engine optimization, creating product roadmaps, presenting SEO business cases, and using data-driven insights to help product owners and SEO teams alike prioritize their initiatives.
-                        </p>
-                        <p class="my-2">
-                          My personal hobbies include playing bass guitar, creative writing, web development, gardening, boxing, yoga, reading (a lot of Stephen King!), and biking.
-                        </p>
-                        <button class="button-19 cta mt-3 mb-5" onclick="openModal('modal-1')">Drop Me a Line</button>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">What I do</p>
+          <h2 id="services-heading">Search, content &amp; the craft in between</h2>
+        </header>
+        <div class="services">
+          <article class="service">
+            <span class="service-num" aria-hidden="true">01</span>
+            <h3>Technical SEO</h3>
+            <p>Crawling, indexation, canonicalization, XML sitemaps, robots.txt and Core Web Vitals diagnostics for large e-commerce sites.</p>
+            <button class="service-cta" type="button" data-open-contact data-service="Technical SEO">Ask about technical SEO <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="service">
+            <span class="service-num" aria-hidden="true">02</span>
+            <h3>Content SEO</h3>
+            <p>Keyword research, site architecture and content strategy, prioritized with data from analytics and Search Console.</p>
+            <button class="service-cta" type="button" data-open-contact data-service="Content SEO">Ask about content SEO <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="service">
+            <span class="service-num" aria-hidden="true">03</span>
+            <h3>Writing &amp; copywriting</h3>
+            <p>Researched, search-optimized articles on technology, education and music, in voices from buyer's guide to backstage casual.</p>
+            <button class="service-cta" type="button" data-open-contact data-service="Content Writing">Ask about writing <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="service">
+            <span class="service-num" aria-hidden="true">04</span>
+            <h3>UX writing &amp; content design</h3>
+            <p>Clear microcopy built on semantic, accessible HTML that serves people and crawlers alike.</p>
+            <button class="service-cta" type="button" data-open-contact data-service="UX Writing/Content Design">Ask about UX writing <span aria-hidden="true">→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing" class="section section-alt" aria-labelledby="writing-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Selected articles</p>
+          <h2 id="writing-heading">My writing work</h2>
+        </header>
+        <div class="filters" role="group" aria-label="Filter by publication" data-filters hidden>
+          <button type="button" class="chip" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="CDW.com">CDW.com</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="FedTech Magazine">FedTech</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="UrbanMatter">UrbanMatter</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="Smile Politely">Smile Politely</button>
+        </div>
+        <div class="card-grid" data-filter-grid>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/cat5-vs-cat6-ethernet-cables-thumbnail-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2021-10-12">Oct 2021</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/cat5-vs-cat6-ethernet-cables.html">Cat5 vs. Cat6 Ethernet Cables</a></h3>
+              <p>Learn the differences between Cat5, Cat5e, Cat6 and Cat6a Ethernet cables and find the best type of Ethernet cable for your needs. I did the writing, research, SEO research and built the article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/hardware-laptop-vs-desktop-og-thumbnail-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2023-07-21">Jul 2023</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/laptop-vs-desktop.html">Laptop vs. Desktop: Pros and Cons</a></h3>
+              <p>This article breaks down the pros and cons of laptops vs. desktops so you can make an informed decision on which is best for you. Used generative AI to outline. I wrote the content and did the SEO research.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/cpu-versus-ram-which-more-important-you-card-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2022-01-06">Jan 2022</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/cpu-versus-ram-which-more-important-you.html">CPU vs. RAM</a></h3>
+              <p>Keep reading to learn more about how both components work and what their specifications can mean for overall performance. I wrote the content, did the SEO research, and built the article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/types-of-ssds-thumbnail-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2022-07-21">Jul 2022</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/ssd-types-m2-sata-nvme-u2.html">M.2 vs. NVMe vs. 2.5" vs. U.2 SSDs</a></h3>
+              <p>This article breaks down the primary types of SSDs. I wrote the content, did the SEO research, and built the article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/desktop-vs-all-in-one-og-thumbnail-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2022-10-17">Oct 2022</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/desktop-vs-all-in-one.html">Desktop PC vs. All-in-One Computers</a></h3>
+              <p>Debating between buying an all-in-one vs. a desktop computer? Read this comprehensive guide. I wrote the content, did the SEO research, and built the article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="CDW.com">
+            <img src="https://webobjects2.cdw.com/is/image/CDW/hardware-chromebook-pros-cons-og-540" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>CDW.com</span><time datetime="2022-08-04">Aug 2022</time></p>
+              <h3><a class="card-link" href="https://www.cdw.com/content/cdw/en/articles/hardware/chromebook-pros-and-cons.html">Top 10 Pros and Cons of Chromebooks</a></h3>
+              <p>Be aware of the pros and cons of Chromebooks before you make your purchase. I wrote the content, did the SEO research, and built the article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="FedTech Magazine">
+            <img src="https://fedtechmagazine.com/sites/fedtechmagazine.com/files/styles/photo_sectionlnd_top/public/articles/%5Bcdw_tech_site%3Afield_site_shortname%5D/202208/GettyImages-527692052.jpg?itok=XyzmBELM" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>FedTech Magazine</span><time datetime="2022-08-30">Aug 2022</time></p>
+              <h3><a class="card-link" href="https://fedtechmagazine.com/article/2022/08/5-questions-ask-when-buying-uninterruptible-power-supplies">5 Questions to Ask When Buying Uninterruptible Power Supplies</a></h3>
+              <p>The right UPS can keep the work going and prevent data loss during outages. Here's what you should know before buying a UPS. I wrote this article and provided microcopy for the related infographic.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="FedTech Magazine">
+            <img src="https://fedtechmagazine.com/sites/fedtechmagazine.com/files/styles/cdw_article_hero/public/articles/%5Bcdw_tech_site%3Afield_site_shortname%5D/202208/FT_Q322_FAQFive_Lawless_hero.jpg.webp?itok=XvP0eFkv" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>FedTech Magazine</span><time datetime="2022-07-27">Jul 2022</time></p>
+              <h3><a class="card-link" href="https://fedtechmagazine.com/article/2022/07/5-answers-common-questions-about-chip-supply-shortage">5 Answers to Common Questions About the Chip Supply Shortage</a></h3>
+              <p>As agencies went remote in 2020, the demand for laptops and other consumer electronics skyrocketed. Here's why. I wrote and researched this article.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="UrbanMatter">
+            <img src="https://urbanmatter.com/chicago/wp-content/uploads/2017/09/14484729_413948662062487_4221579694872953731_n.jpg" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>UrbanMatter</span><time datetime="2017-09-28">Sep 2017</time></p>
+              <h3><a class="card-link" href="https://urbanmatter.com/chicago/bottomless-boozy-brunch-nyc/">5 Best Bottomless Boozy Brunch Spots in NYC</a></h3>
+              <p>Listicle-style content with a funny flair.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="Smile Politely">
+            <img src="img/Dropkick-Murphys-live-congress-theater.jpg" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>Smile Politely</span><time datetime="2012-11-15">Nov 2012</time></p>
+              <h3><a class="card-link" href="https://www.smilepolitely.com/music/dropkick_murphys/">Getting rowdy with Dropkick Murphys</a></h3>
+              <p>I wrote this performance preview article during college. Written in a casual voice.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="Smile Politely">
+            <img src="img/2victorwooten_500.jpg" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>Smile Politely</span><time datetime="2012-10-12">Oct 2012</time></p>
+              <h3><a class="card-link" href="https://www.smilepolitely.com/music/a_pinoeer_of_the_bass_guitar/">A pioneer of the bass guitar</a></h3>
+              <p>I wrote this performance preview article during college. It's about one of my bass heroes, written in a casual voice.</p>
+            </div>
+          </article>
+          <article class="card" data-pub="Smile Politely">
+            <img src="img/electric20six.jpg" alt="" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>Smile Politely</span><time datetime="2012-11-07">Nov 2012</time></p>
+              <h3><a class="card-link" href="https://www.smilepolitely.com/music/you_can_count_on_electric_six/">You can count on Electric Six</a></h3>
+              <p>Goofy article on a goofy band I wrote in my college days.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dev" class="section" aria-labelledby="dev-heading">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Side projects</p>
+          <h2 id="dev-heading">My dev work</h2>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <img src="img/frontend-mentor-article-component.jpg" alt="" width="900" height="616" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>Frontend Mentor</span><time datetime="2025-05">May 2025</time></p>
+              <h3><a class="card-link" href="https://github.com/djlaw90/article-preview-component">Article Component</a></h3>
+              <p>A little article component, made with a splash of ES6 vanilla JavaScript.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/roman-numeral.jpg" alt="" width="900" height="689" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>freeCodeCamp</span><time datetime="2024-04">Apr 2024</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/romanNumberConverter/">Roman Numeral Converter</a></h3>
+              <p>Converts Roman numerals to Arabic numerals.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/library.jpg" alt="" width="900" height="264" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2024-01">Jan 2024</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/odin-library/">Library Project</a></h3>
+              <p>A little app for tracking the books you've read.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/tictactoe.jpg" alt="" width="900" height="556" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-12">Dec 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/tic-tac-toe/">Tic Tac Toe</a></h3>
+              <p>The timeless classic. Play vs. another player or the computer.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/etch-a-sketch.jpg" alt="" width="900" height="553" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-10">Oct 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/etch-a-sketch/">Etch-a-Sketch</a></h3>
+              <p>Etch-A-Sketch project from The Odin Project curriculum. Learned about CSS Grid.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/calculator.jpg" alt="" width="900" height="469" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-10">Oct 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/calculator/">Calculator</a></h3>
+              <p>Created a basic calculator.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/dashboard.jpg" alt="" width="900" height="432" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-10">Oct 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/admin-dashboard/">Software Dashboard</a></h3>
+              <p>Created the UI for a dashboard with a combo of CSS Grid and Flexbox.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/pokemon.jpg" alt="" width="900" height="342" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-09">Sep 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/landing-page-odin/">Pokémon Landing Page</a></h3>
+              <p>A landing page I made dedicated to Pokémon Blue.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/rps.jpg" alt="" width="900" height="885" loading="lazy">
+            <div class="card-body">
+              <p class="card-meta"><span>The Odin Project</span><time datetime="2023-09">Sep 2023</time></p>
+              <h3><a class="card-link" href="https://djlaw90.github.io/rps/">Rock, Paper, Scissors Game</a></h3>
+              <p>A little rock, paper, scissors game I made with Bootstrap and vanilla JS.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container about">
+        <div class="about-aside">
+          <img class="portrait" src="img/dusty-lawless.jpg" alt="Portrait of Dusty Lawless" width="627" height="900" loading="lazy">
+          <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/dusty-lawless-3126a71b8/"><img src="img/LI-In-Bug.png" alt="LinkedIn" width="28" height="24"></a></li>
+            <li><a href="https://github.com/djlaw90"><img class="invert-dark" src="img/github-mark.png" alt="GitHub" width="24" height="24"></a></li>
+            <li><a href="https://www.frontendmentor.io/profile/djlaw90"><img src="img/frontendmentor-logo.svg" alt="Frontend Mentor" width="19" height="24"></a></li>
+          </ul>
+        </div>
+        <div class="about-body">
+          <p class="eyebrow">Hello!</p>
+          <h2 id="about-heading">About me</h2>
+          <p class="lede">I'm a subject matter expert and educator in search engine optimization for a Fortune 200 company and tutor community college students on the side.</p>
+          <p>I am an expert in both content and technical SEO for e-commerce websites and a student of web development (I hand-built this site with HTML, CSS, and vanilla JavaScript). I'm open to freelance and part-time work in writing or SEO. I particularly enjoy writing about technology, education, and music.</p>
+          <p>I take a product owner mentality to search engine optimization, creating product roadmaps, presenting SEO business cases, and using data-driven insights to help product owners and SEO teams alike prioritize their initiatives.</p>
+
+          <div class="skills">
+            <div>
+              <h3>SEO skills</h3>
+              <ul class="tags">
+                <li>Keyword research</li><li>Link building</li><li>Site architecture</li><li>Content writing</li><li>Content strategy</li><li>Canonicalization</li><li>Crawling &amp; indexation</li><li>Semantic HTML</li><li>Web accessibility</li><li>XML sitemaps</li><li>robots.txt</li><li>Core Web Vitals</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools &amp; platforms</h3>
+              <ul class="tags">
+                <li>Adobe Analytics</li><li>Google Analytics</li><li>Search Console</li><li>seoClarity</li><li>Moz</li><li>Screaming Frog</li><li>Google Ads</li><li>Lighthouse</li><li>PageSpeed Insights</li><li>WebPageTest</li><li>AEM</li><li>WordPress</li><li>Magento</li><li>Squarespace</li><li>Weebly</li>
+              </ul>
             </div>
           </div>
-                
-   
-                </div>
-              </main>
-    <footer class="footer mt-auto py-3">
-			<div class="container text-center"> <span class="text-muted">Copyright © 2025 Dustin Lawless</span></div>
-      <div class="container text-center"> <span class="text-muted">Hosted on <a href="https://github.com/">Github</a></span></div>
-		</footer>
-    
 
-    <script src="app.js"></script>
-    <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-      // Initialize Scrollspy
-      $('body').scrollspy({ target: '#navbar-example' });
-    </script>
+          <p>My personal hobbies include playing bass guitar, creative writing, web development, gardening, boxing, yoga, reading (a lot of Stephen King!), and biking.</p>
+          <button class="btn" type="button" data-open-contact>Drop me a line</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container cta-inner">
+        <div>
+          <h2 id="cta-heading">Let's make something people can find.</h2>
+          <p>Open to freelance and part-time work in SEO and writing.</p>
+        </div>
+        <button class="btn btn-light" type="button" data-open-contact>Start a conversation</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Dustin Lawless</p>
+      <p>Hosted on <a href="https://github.com/djlaw90/portfolio">GitHub Pages</a></p>
+    </div>
+  </footer>
+
+  <dialog class="contact" id="contact" aria-labelledby="contact-heading">
+    <form class="contact-form" action="https://formsubmit.co/252c47b8ec3b9c770eeeec1eb67ee02f" method="POST" target="_blank">
+      <button class="contact-close" type="button" aria-label="Close" data-close-contact>&times;</button>
+      <h2 id="contact-heading">Contact Dusty Lawless</h2>
+      <label>
+        Full name
+        <input name="fullName" type="text" autocomplete="name" placeholder="Your name" required>
+      </label>
+      <label>
+        Email address
+        <input name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+      </label>
+      <label>
+        What service are you looking for?
+        <select name="service" required>
+          <option value="" selected disabled>Select a service</option>
+          <option>Technical SEO</option>
+          <option>Content SEO</option>
+          <option>Content Writing</option>
+          <option>Copywriting</option>
+          <option>UX Writing/Content Design</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>
+        Anything else I should know?
+        <textarea name="anythingElse" rows="4"></textarea>
+      </label>
+      <button class="btn" type="submit">Contact me</button>
+    </form>
+  </dialog>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
