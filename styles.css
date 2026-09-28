@@ -746,16 +746,3 @@ a { color: var(--accent-strong); text-underline-offset: 3px; }
     color: #0d5f89;
 }
 .btn-light:hover { background: #eaf6fc; border-color: #eaf6fc; }
-
-/* SCROLL REVEAL (only when JS is running)
--------------------------------*/
-.js .reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity .6s ease, transform .6s ease;
-}
-.js .reveal.is-visible { opacity: 1; transform: none; }
-
-@media (prefers-reduced-motion: reduce) {
-    .js .reveal { opacity: 1; transform: none; }
-}

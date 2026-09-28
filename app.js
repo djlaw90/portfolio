@@ -62,18 +62,4 @@ filters.addEventListener('click', (event) => {
     filterCards.forEach((card) => { card.hidden = filter !== 'all' && card.dataset.pub !== filter; });
 });
 
-// Fade sections and cards in as they scroll into view
-const revealTargets = document.querySelectorAll('.section-head, .service, .card, .about-aside, .about-body, .cta-inner');
-const revealer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        revealer.unobserve(entry.target);
-    });
-}, { rootMargin: '0px 0px -8% 0px' });
-revealTargets.forEach((el) => {
-    el.classList.add('reveal');
-    revealer.observe(el);
-});
-
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
