@@ -367,11 +367,7 @@ a { color: var(--accent-strong); text-underline-offset: 3px; }
     max-height: 52px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(1);
-    opacity: .75;
-    transition: filter .25s, opacity .25s;
 }
-.logo-row li:hover img { filter: none; opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
     .marquee { mask-image: none; -webkit-mask-image: none; }
